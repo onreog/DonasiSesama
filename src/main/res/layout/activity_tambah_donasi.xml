@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ivcode.donasisesama.tambah_donasi">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:text="NUD"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:text="Nomor Unik Donasi (Otomatis)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/txt_donasi_nud"
+                android:enabled="false"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Donatur"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:text="Masukan Nama Donatur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/txt_donasi_donatur"
+                android:hint=" . . ."
+                android:inputType="textPersonName"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content">
+                <requestFocus />
+            </EditText>
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Tanggal"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:text="Masukan Tanggal Penyerahan Donasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:hint=" . . ."
+                    android:maxLength="9"
+                    android:inputType="date"
+                    android:id="@+id/txtTanggal"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/btn_setDatePicker"
+                    android:backgroundTint="#000000"
+                    android:background="@android:drawable/ic_menu_my_calendar"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Nominal"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:text="Masukan Jumlah Donasi Yang Diberikan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/txt_donasi_nominal"
+                android:hint=" . . ."
+                android:inputType="numberDecimal"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

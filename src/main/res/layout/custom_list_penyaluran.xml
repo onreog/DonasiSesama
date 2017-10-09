@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        android:padding="10dp"
+        android:background="@drawable/back1"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iconAccount"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_account_circle_black_36dp" />
+
+        <TextView
+            android:id="@+id/txt_item_penyaluran_tujuan"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/iconAccount"
+            android:gravity="center|left"
+            android:text="-"
+            android:textAppearance="?android:attr/textAppearanceListItem"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_below="@id/txt_item_penyaluran_tujuan"
+            android:id="@+id/txt_item_penyaluran_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/iconAccount"
+            android:gravity="center|left"
+            android:text="Penerima : "
+            android:textSize="15sp" />
+        <TextView
+            android:layout_below="@id/txt_item_penyaluran_tujuan"
+            android:id="@+id/txt_item_penyaluran_nama_value"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/txt_item_penyaluran_nama"
+            android:gravity="center|left"
+            android:text="-"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/txt_item_penyaluran_nama"
+            android:layout_toRightOf="@id/iconAccount"
+            android:background="#707070" />
+
+        <TextView
+            android:id="@+id/txt_item_penyaluran_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line1"
+            android:layout_toRightOf="@id/iconAccount"
+            android:text="ID : "
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/txt_item_penyaluran_id_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line1"
+            android:layout_toRightOf="@id/txt_item_penyaluran_id"
+            android:text="-"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/txt_item_penyaluran_tanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/line1"
+            android:text="-"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/txt_item_penyaluran_nominal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_item_penyaluran_id"
+            android:layout_toRightOf="@id/iconAccount"
+            android:text="-"
+            android:textColor="#6da400"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</RelativeLayout>
